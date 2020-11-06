@@ -1,0 +1,20 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: blueviolet;
+}
+
+.header {
+  background-color: burlywood;
+  position: sticky;
+  top: 0;
+}
+
+.main {
+  display: grid;
+  background-color: cadetblue;
+}
+
+.footer {
+  background-color: darkolivegreen;
+}
