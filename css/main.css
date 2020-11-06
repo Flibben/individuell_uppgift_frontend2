@@ -5,16 +5,79 @@ body {
 }
 
 .header {
-  background-color: burlywood;
+  display: flex;
+  justify-content: space-evenly;
+
   position: sticky;
   top: 0;
+
+  padding: 0.7rem;
+
+  background-color: burlywood;
+
+  border-bottom: solid 0.2rem;
+
+  font-size: 1.5rem;
+  font-weight: 999;
+}
+.header > span:hover {
+  box-sizing: border-box;
+  background-color: red;
+  border: solid 2px;
+  margin: -2px;
+}
+
+.header > span {
+  padding: 0.2rem;
 }
 
 .main {
   display: grid;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 1rem;
   background-color: cadetblue;
+  background-image: linear-gradient(to right, #5f9ea0, #3c6364, #3c6364, cadetblue);
+}
+
+.card {
+  max-width: 70ch;
+  box-shadow: 0 0 1rem -0.2rem;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  background-color: #efeff8;
 }
 
 .footer {
-  background-color: darkolivegreen;
+  display: flex;
+  justify-content: space-evenly;
+
+  padding: 0.7rem;
+
+  background-color: #7d9c46;
+
+  border-top: solid 0.2rem;
+  font-size: 1.5rem;
+  font-weight: 999;
+}
+
+.active {
+  background: #efeff8;
+  border: solid 2px black;
+  margin: -2px;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active,
+a:focus {
+  box-sizing: border-box;
+  background-color: red;
+  /* border: solid 2px;
+  margin: -2px; */
 }
