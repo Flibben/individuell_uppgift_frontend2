@@ -1,0 +1,39 @@
+SCRUM
+Scrum är ett agilt arbetssätt, vanligt inom mjukvaruutveckling (härifrån: utveckling). Det är en vidareutveckling från vattenfallsmetoden som var vanligt i produktutveckling, typ bilar, där all planering skulle vara färdig innan produktionen startade.
+Eftersom att utveckling inom it inte sker på samma sätt, där det kan vara relativt lätt att backa och göra om ett steg, så utvecklades Scrum.
+Inom scrum så har man ett par nyckelroller.
+Produktägare
+Den som bestämmer hur slutprodukten ska vara och har beslutanderätt
+Scrum-master
+Den som styr scrum-processen
+Utvecklingsteam
+De som utför uppgifter i sprint-log, som hämtas från back-log.
+
+I scrum så har man dagliga möten, kontinuerlig kontakt med produktägaren och tydligt uppdelade uppgifter.
+Innan avslutad spring har man ett sprint review möte och ett sprint retrospective möte. Det här görs för att gå igenom vad som gått bra och dåligt och vad som kan göras för att utveckla arbetet.
+
+
+GRAFISK PROFIL
+Används inom företag och organisationer för att säkerställa en enhetlig design i kommunikationen utåt (och inåt). Det kan vara allt från en grafisk profil för visitkort, till en hel medlemstidning eller hur en logga ska visas i alla olika sammanhang där den kan förekomma.
+
+
+TILLGÄNGLIGHET
+Viktigt för att säkerställa att alla, oavsett förmåga och funktion, ska ha en chans att ta del av information och material. Ska en sida vara tillgänlig så finns det en standard, WCAG, som ska följas för att säkerställa att alla, i så stor utsträckning det går, ska ha möjlighet att ta del av den information som finns.
+
+
+FÖR OCH NACKDELAR
+SCRUM
+Det kan vara en nackdel att använda sig av scrum om man är ett väldigt litet utvecklingsteam på, säg, 2 personer eller mindre. Då kan det landa i ett överdokumenterande och problem med att faktiskt utföra uppgifter och istället hamna i ett ständigt följande och dokumenterande av processer.
+Fördelen med Scrum i en miljö där det fungerar är att många kan vara med och bidra, det blir tydligt uppdelade utvecklingsområden som man jobbar med och ett flöde av utbyte mellan de se jobbar i projektet. Alla får en chans att lära av alla.
+En stor fördel med scrum är att det, i teorin, är en ständig kontakt med produktägaren som hela tiden har en chans att påverka vad som ska och inte ska göras. Det minskar risken för att produkten inte blir vad produktägaren tänker sig att den ska vara.
+
+GRAFISK PROFIL
+Generellt är en grafisk profil en fördel och något positivt.Något som gör det snabbare och lättare att skapa nytt material som är enhetligt med tidigare material.
+En viss risk finns att en grafisk profil i slutändan kan bli överväldigande stor i enorma företag där allt styrs ner på detaljnivå och på så sätt kan hämma kreativa processer eller möjlighet i viss kommunikation.
+I en perfekt värld så är en grafisk profil en tillgång till 100%, men världen är inte alltid perfekt.
+
+TILLGÄNGLIGHET
+Kort sagt, det som är bra för någon med funktionsnedsättning/variation är bra för alla (användare). Det som kan bli svårt är om ett mindre utvecklingsteam ska försöka uppfylla precis alla WCAG som finns.
+Troligtvis saknar ett mindre team en expert inom WCAG och då tas värdefull tid i anspråk från utveckling av andra delar.
+I ett större team finns risker för frustration från medlemmar då en WCAG expert kommer in och ska styra hur en sida ska se ut och fungera.
+Samtidigt så kan det vara fördel i ett större team, när krav på att WCAG ska följas, om en person är ansvarig för den här delen och kan avsätta tid till detta. 

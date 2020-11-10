@@ -1,7 +1,15 @@
+/* CSS-structure follows HTML-structure */
+
 body {
   padding: 0px;
   margin: 0px;
   background-color: blueviolet;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 .header {
@@ -42,13 +50,13 @@ body {
 
 .card {
   max-width: 70ch;
+  height: min-content;
   box-shadow: 0 0 1rem -0.2rem;
   border-radius: 0.4rem;
   padding: 1rem;
   background-color: #efeff8;
 }
 .portfolio {
-  /* background-color: chartreuse; */
   display: grid;
   gap: 1rem;
   grid-auto-columns: minmax(1fr, auto);
@@ -59,15 +67,13 @@ body {
   grid-area: txt;
 }
 
-
 .imgStyle {
   grid-area: img;
   align-self: center;
   object-fit: cover;
   max-width: 100%;
-  height: auto;
-  
-
+  max-height: auto;
+  border-radius: 0.5rem;
 }
 
 .footer {
@@ -81,6 +87,16 @@ body {
   border-top: solid 0.2rem;
   font-size: 1.5rem;
   font-weight: 999;
+}
+
+.footer > span {
+  padding: 0.2rem;
+}
+.footer > span:hover {
+  box-sizing: border-box;
+  background-color: #ff5959;
+  border: solid 2px;
+  margin: -2px;
 }
 
 .active {
