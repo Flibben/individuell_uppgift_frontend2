@@ -22,7 +22,7 @@ body {
 }
 .header > span:hover {
   box-sizing: border-box;
-  background-color: red;
+  background-color: #ff5959;
   border: solid 2px;
   margin: -2px;
 }
@@ -46,6 +46,28 @@ body {
   border-radius: 0.4rem;
   padding: 1rem;
   background-color: #efeff8;
+}
+.portfolio {
+  /* background-color: chartreuse; */
+  display: grid;
+  gap: 1rem;
+  grid-auto-columns: minmax(1fr, auto);
+  grid-template-areas: "img txt";
+}
+
+.txt {
+  grid-area: txt;
+}
+
+
+.imgStyle {
+  grid-area: img;
+  align-self: center;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  
+
 }
 
 .footer {
@@ -77,7 +99,7 @@ a:visited {
 a:active,
 a:focus {
   box-sizing: border-box;
-  background-color: red;
+  background-color: #ff5959;
   /* border: solid 2px;
   margin: -2px; */
 }
