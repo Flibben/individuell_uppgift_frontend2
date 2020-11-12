@@ -1,0 +1,123 @@
+/* CSS-structure follows HTML-structure */
+
+@mixin headerFooterSpanStyle {
+    span {
+        padding: 0.2rem;
+      }
+    span:hover {
+        box-sizing: border-box;
+        background-color: #ff5959;
+        border: solid 2px;
+        margin: -2px;
+      }
+}
+
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: blueviolet;
+
+    .wrapper {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+
+      .header {
+        display: flex;
+        justify-content: space-evenly;
+      
+        position: sticky;
+        top: 0;
+      
+        padding: 0.7rem;
+      
+        background-color: burlywood;
+      
+        border-bottom: solid 0.2rem;
+      
+        font-size: 1.5rem;
+        font-weight: 999;
+        
+        @include headerFooterSpanStyle();
+      }
+    }
+    .active {
+        background: #efeff8;
+        border: solid 2px black;
+        margin: -2px;
+      }
+      
+      a,
+      a:link,
+      a:visited {
+        text-decoration: none;
+        color: inherit;
+      }
+      
+      a:active,
+      a:focus {
+        box-sizing: border-box;
+        background-color: #ff5959;
+      }
+  }
+  
+  
+.main {
+    display: grid;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: cadetblue;
+    background-image: linear-gradient(to right, #5f9ea0, #3c6364, #3c6364, cadetblue);
+    
+    .card {
+      max-width: 70ch;
+      height: min-content;
+      box-shadow: 0 0 1rem -0.2rem;
+      border-radius: 0.4rem;
+      padding: 1rem;
+      background-color: #efeff8;
+      animation: fadein 0.45s;
+    }
+    .portfolio {
+      display: grid;
+      gap: 1rem;
+      grid-auto-columns: minmax(1fr, auto);
+      grid-template-areas: "img txt";
+      .txt {
+        grid-area: txt;
+      }
+      .imgStyle {
+        grid-area: img;
+        align-self: center;
+        object-fit: cover;
+        max-width: 100%;
+        max-height: auto;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+  
+  
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+  
+    padding: 0.7rem;
+  
+    background-color: #7d9c46;
+  
+    border-top: solid 0.2rem;
+    font-size: 1.5rem;
+    font-weight: 999;
+    @include headerFooterSpanStyle();
+  }

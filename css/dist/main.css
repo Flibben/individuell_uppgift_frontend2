@@ -1,61 +1,4 @@
 /* CSS-structure follows HTML-structure */
-
-body {
-  padding: 0px;
-  margin: 0px;
-  background-color: blueviolet;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-}
-
-.header {
-  display: flex;
-  justify-content: space-evenly;
-
-  position: sticky;
-  top: 0;
-
-  padding: 0.7rem;
-
-  background-color: burlywood;
-
-  border-bottom: solid 0.2rem;
-
-  font-size: 1.5rem;
-  font-weight: 999;
-}
-.header > span:hover {
-  box-sizing: border-box;
-  background-color: #ff5959;
-  border: solid 2px;
-  margin: -2px;
-}
-
-.header > span {
-  padding: 0.2rem;
-}
-.main {
-  display: grid;
-  justify-content: space-evenly;
-  gap: 1rem;
-  padding: 1rem;
-  background-color: cadetblue;
-  background-image: linear-gradient(to right, #5f9ea0, #3c6364, #3c6364, cadetblue);
-}
-
-.card {
-  max-width: 70ch;
-  height: min-content;
-  box-shadow: 0 0 1rem -0.2rem;
-  border-radius: 0.4rem;
-  padding: 1rem;
-  background-color: #efeff8;
-  animation: fadein 0.45s;
-}
 @keyframes fadein {
   from {
     opacity: 0;
@@ -64,19 +7,80 @@ body {
     opacity: 1;
   }
 }
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: blueviolet;
+}
+body .wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+body .wrapper .header {
+  display: flex;
+  justify-content: space-evenly;
+  position: sticky;
+  top: 0;
+  padding: 0.7rem;
+  background-color: burlywood;
+  border-bottom: solid 0.2rem;
+  font-size: 1.5rem;
+  font-weight: 999;
+}
+body .wrapper .header span {
+  padding: 0.2rem;
+}
+body .wrapper .header span:hover {
+  box-sizing: border-box;
+  background-color: #ff5959;
+  border: solid 2px;
+  margin: -2px;
+}
+body .active {
+  background: #efeff8;
+  border: solid 2px black;
+  margin: -2px;
+}
+body a,
+body a:link,
+body a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+body a:active,
+body a:focus {
+  box-sizing: border-box;
+  background-color: #ff5959;
+}
 
-.portfolio {
+.main {
+  display: grid;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: cadetblue;
+  background-image: linear-gradient(to right, #5f9ea0, #3c6364, #3c6364, cadetblue);
+}
+.main .card {
+  max-width: 70ch;
+  height: min-content;
+  box-shadow: 0 0 1rem -0.2rem;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  background-color: #efeff8;
+  animation: fadein 0.45s;
+}
+.main .portfolio {
   display: grid;
   gap: 1rem;
   grid-auto-columns: minmax(1fr, auto);
   grid-template-areas: "img txt";
 }
-
-.txt {
+.main .portfolio .txt {
   grid-area: txt;
 }
-
-.imgStyle {
+.main .portfolio .imgStyle {
   grid-area: img;
   align-self: center;
   object-fit: cover;
@@ -88,43 +92,18 @@ body {
 .footer {
   display: flex;
   justify-content: space-evenly;
-
   padding: 0.7rem;
-
   background-color: #7d9c46;
-
   border-top: solid 0.2rem;
   font-size: 1.5rem;
   font-weight: 999;
 }
-
-.footer > span {
+.footer span {
   padding: 0.2rem;
 }
-.footer > span:hover {
+.footer span:hover {
   box-sizing: border-box;
   background-color: #ff5959;
   border: solid 2px;
   margin: -2px;
-}
-
-.active {
-  background: #efeff8;
-  border: solid 2px black;
-  margin: -2px;
-}
-
-a,
-a:link,
-a:visited {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:active,
-a:focus {
-  box-sizing: border-box;
-  background-color: #ff5959;
-  /* border: solid 2px;
-  margin: -2px; */
 }
