@@ -94,22 +94,22 @@ body .wrapper .main .portfolio .imgStyle {
     display: grid;
     grid-template-columns: repeat(1, auto);
   }
-  body .wrapper .footer {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0.7rem;
-    background-color: #7d9c46;
-    border-top: solid 0.2rem;
-    font-size: 1.5rem;
-    font-weight: 999;
-  }
-  body .wrapper .footer span {
-    padding: 0.2rem;
-  }
-  body .wrapper .footer span:hover {
-    box-sizing: border-box;
-    background-color: #ff5959;
-    border: solid 2px;
-    margin: -2px;
-  }
+}
+body .wrapper .footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.7rem;
+  background-color: #7d9c46;
+  border-top: solid 0.2rem;
+  font-size: 1.5rem;
+  font-weight: 999;
+}
+body .wrapper .footer span {
+  padding: 0.2rem;
+}
+body .wrapper .footer span:hover {
+  box-sizing: border-box;
+  background-color: #ff5959;
+  border: solid 2px;
+  margin: -2px;
 }
