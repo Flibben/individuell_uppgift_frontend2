@@ -89,10 +89,16 @@ body .wrapper .main .portfolio .imgStyle {
   max-height: auto;
   border-radius: 0.5rem;
 }
+body .wrapper .landing {
+  grid-template-columns: repeat(1, auto);
+}
 @media screen and (max-width: 700px) {
   body .wrapper .main {
     display: grid;
     grid-template-columns: repeat(1, auto);
+  }
+  body .wrapper .main .portfolio {
+    grid-template-areas: "img" "txt";
   }
 }
 body .wrapper .footer {
