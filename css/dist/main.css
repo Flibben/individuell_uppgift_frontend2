@@ -57,6 +57,7 @@ body a:focus {
 .main {
   display: grid;
   justify-content: space-evenly;
+  align-content: start;
   gap: 1rem;
   padding: 1rem;
   background-color: cadetblue;
